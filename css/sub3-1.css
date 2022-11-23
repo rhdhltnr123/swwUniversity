@@ -36,20 +36,21 @@ body {
 }
 /* ----------header---------- */
 header {
-  max-width: 1440px;
+  max-width: 100vw;
   width: 100%;
 }
 /* ----------header-sub---------- */
 .header-sub {
   width: 100%;
-  height: 30px;
+  height: 35px;
   background: var(--mian-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 14px;
   font-weight: 500;
   transition: background 0.5s;
 }
@@ -159,7 +160,8 @@ header {
   gap: 10px;
 }
 .header-main-list-depth2-list li {
-  width: 135px;
+  /* width: 135px; */
+  width: auto;
   height: 35px;
 }
 .header-main-list-depth2-list li a {
@@ -174,6 +176,7 @@ header {
   align-items: center;
   transition: 0.3s;
   position: relative;
+  padding: 10px 20px;
 }
 .header-main-list-depth2-list li a:hover {
   background: var(--mian-color);
@@ -385,9 +388,9 @@ header {
 
 /* ----------footer---------- */
 footer {
-  max-width: 1440px;
+  max-width: 100vw;
   width: 100%;
-  height: 150px;
+  height: 120px;
   background: var(--green);
   display: flex;
   font-family: "Roboto", sans-serif;
@@ -444,6 +447,12 @@ footer {
   .footer-select {
     padding: 0;
     margin-top: 30px;
+  }
+  .footer-text {
+    padding: 0px;
+  }
+  .footer-select {
+    margin-top: 10px;
   }
 }
 /* ----------upbtn---------- */
@@ -581,7 +590,7 @@ footer {
 .item.slick-slide {
   width: 400px;
   height: 400px !important;
-  transition: transform 0.4s;
+  transition: transform 0.2s;
   position: relative;
   border-radius: 15px;
 }

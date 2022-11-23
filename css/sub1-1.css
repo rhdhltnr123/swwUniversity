@@ -19,10 +19,10 @@ section > p {
   font-weight: 500;
 }
 
-.wrap {
+/* .wrap {
   margin: 0 auto;
   max-width: 1440px;
-}
+} */
 
 .main-visual-sub1-1 {
   max-width: 1440px;
@@ -242,5 +242,11 @@ section .content3-text {
 
   .lnb .lnb-list {
     flex: 3;
+  }
+  .footer-text {
+    padding: 0px;
+  }
+  .footer-select {
+    margin-top: 10px;
   }
 }
