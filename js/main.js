@@ -9,7 +9,8 @@ $(function () {
   });
   $(window).scroll(function () {
     let scrollT = $(window).scrollTop();
-    if (scrollT > 100) {
+    //if (scrollT > 100) 에서 수정함
+    if (scrollT >= 100) {
       $(".header-main").addClass("active");
       $(".header-sub").addClass("active");
       $(".upbtn").addClass("active");
@@ -24,7 +25,6 @@ $(function () {
 $(function () {
   $(window).scroll(function () {
     let scrollT2 = $(window).scrollTop();
-
     if (scrollT2 < 100) {
       $(".header-main-list-depth2-box").addClass("active");
       $(".header-main-list-depth2-list li a").addClass("active");
@@ -53,7 +53,7 @@ $(function () {
     $(".main-visual").css({
       "background-image": `url(${bgImg[bgImgNum]})`,
     });
-  }, 5000);
+  }, 8000);
 });
 
 /* mobile site map btn */
@@ -112,6 +112,7 @@ $(function () {
     centerMode: true,
     centerPadding: "40px",
     slidesToShow: 3,
+    speed: 3000,
     responsive: [
       {
         breakpoint: 768,
